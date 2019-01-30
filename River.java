@@ -1,7 +1,8 @@
 
 public class River extends Landmark
 {
-    public River() {
-        
+    public River(String name)
+    {
+        super(name);
     }
 }

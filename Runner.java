@@ -3,7 +3,8 @@ public class Runner
 {
     public static void main(String[] args) 
     {
-        Game g = new Game();
-        g.run();
+        Map map = new Map();
+        Game game = new Game(map);
+        game.run();
     }
 }

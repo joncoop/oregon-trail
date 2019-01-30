@@ -1,10 +1,38 @@
+import java.util.ArrayList;
 
-public class Landmark
+public abstract class Landmark
 {
     private String name;
+    private String description; // maybe use
+    private String[] options;
     
-    public Landmark()
-    {
-
+    public Landmark(String name) {
+        this.name = name;
+    }
+    
+    public String getName() {    
+        return name;
+    }
+    
+    public abstract void description();
+    
+    public void menu() {
+        for (int i=0; i<options.length; i++) {
+            System.out.println(i + ") " + options[i]);
+        }   
+    }
+    
+    
+    /**
+     * Player will stay on current Landmark until successfully advancing
+     * or until all members of the party die.
+     * 
+     * @return true if party successfully advances past Landmark
+     */
+    public boolean play(Party party) {
+        description();
+        menu();
+        
+        return true;
     }
 }
