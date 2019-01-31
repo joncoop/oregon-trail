@@ -1,15 +1,14 @@
 
-public class Farmer extends Person
+public class Farmer implements Profession
 {
-    private int startingWealth;
+    private static int startingMoney = 400;
+    private static int pointMultiplier = 3;
     
-    public Farmer(String name)
-    {
-        super(name);
-        this.startingWealth = 400;
+    public int startingMoney() {
+        return startingMoney;
     }
     
-    public int getStartingWealth() {
-        return startingWealth;
+    public int pointMultiplier() {
+        return pointMultiplier;
     }
 }

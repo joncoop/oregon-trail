@@ -1,8 +1,8 @@
 
 public class Nature extends Landmark
 {
-    public Nature(String name)
+    public Nature(String name, int mileMarker)
     {
-        super(name);
+        super(name, mileMarker);
     }
 }

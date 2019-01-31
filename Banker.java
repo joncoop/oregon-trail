@@ -1,15 +1,14 @@
 
-public class Banker extends Person
+public class Banker implements Profession
 {
-    private int startingWealth;
+    private static int startingMoney = 1200;
+    private static int pointMultiplier = 1;
     
-    public Banker(String name)
-    {
-        super(name);
-        this.startingWealth = 1600;
+    public int startingMoney() {
+        return startingMoney;
     }
     
-    public int getStartingWealth() {
-        return startingWealth;
+    public int pointMultiplier() {
+        return pointMultiplier;
     }
 }

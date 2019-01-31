@@ -1,15 +1,14 @@
 
-public class Carpenter extends Person
+public class Carpenter implements Profession
 {
-    private int startingWealth;
-        
-    public Carpenter(String name)
-    {
-        super(name);
-        this.startingWealth = 800;
+    private static int startingMoney = 800;
+    private static int pointMultiplier = 2;
+    
+    public int startingMoney() {
+        return startingMoney;
     }
     
-    public int getStartingWealth() {
-        return startingWealth;
+    public int pointMultiplier() {
+        return pointMultiplier;
     }
 }

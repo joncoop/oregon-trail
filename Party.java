@@ -13,13 +13,13 @@ public class Party
     private int wagonAxels;
     private int wagonTongues;
 
-    public Party(ArrayList<Person> travelers)
+    public Party()
     {
-        this.travelers = travelers;
+        this.travelers = new ArrayList<Person>();
     }
     
     public void addPerson(Person p) {
-        
+        travelers.add(p);
     }
     
     public void removePerson(Person p) {
